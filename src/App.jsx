@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <div className='task-containall'>
+      <div className='task-contain-all'>
         <AddTask onCreate={taskAdded} />
         <DisplayTask tasks={tasks} />
       </div>

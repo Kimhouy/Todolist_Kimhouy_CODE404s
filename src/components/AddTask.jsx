@@ -18,9 +18,9 @@ function AddTask({ onCreate }) {
 
     return (
         <>
-            <div className="title">
-                <h1>Todo List</h1>
-            </div>
+           
+            <div className="header">Todo List</div>
+           
             <div className="container">
                 <div className="task-container">
                     <form className="add-taskbar" onSubmit={handleSubmit}>

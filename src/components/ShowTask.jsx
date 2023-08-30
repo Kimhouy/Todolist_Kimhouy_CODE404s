@@ -10,7 +10,7 @@ function ShowTask({ task, onDelete, onEdit }) {
         onEdit(id, newAction)
     };
 
-    let content = <h3>{task.action}</h3>;
+    let content = <p>{task.action}</p>;
     if (showEdit) {
         content = <ModifyTask onSubmit={handleSubmit} task={task} />;
     }
@@ -18,7 +18,7 @@ function ShowTask({ task, onDelete, onEdit }) {
 
     return <div className="task-container">
         <div className="task-bar">
-        <div>{content}</div>
+        <div className="task-content">{content}</div>
         <div className="task-actions">
             <button className="edit-button" ><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_10_513)">

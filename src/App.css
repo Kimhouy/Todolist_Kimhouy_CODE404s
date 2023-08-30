@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@400;500;600;700;900&family=Open+Sans:wght@300&display=swap');
+
+
 body {
-    background-color: #7C89FD;
+    background-color: #FF9F1C;
+    font-family: 'Gluten', sans-serif;
 }
 
-.title {
+.header {
     color: white;
     text-align: center;
-    font-size: 30px;
+    font-size: 64px;
+    font-weight: 700;
+    margin-top: 50px;
 }
 
-.task-containall {
+.task-contain-all {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,16 +23,17 @@ body {
 
 .container {
     display: flex;
-
 }
 
 .task-container {
     background-color: white;
     height: auto;
     width: 830px;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     padding: 30px;
-    padding-top: 46px;
+    padding-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .add-taskbar {
@@ -39,19 +46,22 @@ body {
     height: 75px;
     width: 600px;
     border-radius: 10px;
-    border-color: #100CEB;
+    border: 2px solid #CB997E;
     font-size: 24px;
     text-indent: 20px;
+    outline: none;
+    font-family: 'Gluten', sans-serif;
 }
 
 .add-button {
     height: 76px;
     width: 166px;
     border-radius: 10px;
-    background-color: #100CEB;
+    background-color: #CB997E;
     color: white;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
+    font-family: 'Gluten', sans-serif;
 }
 
 /* display tasks section */
@@ -59,20 +69,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-indent: 20px;
     width: 830px;
-    background-color: #BFFAF3;
-    border: 1px solid black;
+    background-color: #FFE8D6;
+    border: 2px solid #CB997E;
     border-radius: 10px;
 
 }
 
+.task-content {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
 .task-display {
-    color: red;
+    margin-top: 100px;
+    overflow: hidden;
 }
 
 .task-modify {
     display: flex;
+
 }
 
 .encourage-message {
@@ -85,6 +101,8 @@ body {
     display: flex;
     gap: 10px;
     margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .edit-button {
@@ -97,6 +115,7 @@ body {
     /* flex-shrink: 0px; */
     border-radius: 10px;
     background-color: #0395FF;
+    opacity: 80%;
 }
 
 .delete-button {
@@ -109,5 +128,7 @@ body {
     /* flex-shrink: 0px; */
     border-radius: 10px;
     background-color: #D41B1B;
-    ;
+    opacity: 80%;
 }
+
+
