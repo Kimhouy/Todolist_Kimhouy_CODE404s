@@ -1,1 +1,113 @@
+body {
+    background-color: #7C89FD;
+}
 
+.title {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.task-containall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+
+}
+
+.task-container {
+    background-color: white;
+    height: auto;
+    width: 830px;
+    /* border-radius: 10px; */
+    padding: 30px;
+    padding-top: 46px;
+}
+
+.add-taskbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-task {
+
+    height: 75px;
+    width: 600px;
+    border-radius: 10px;
+    border-color: #100CEB;
+    font-size: 24px;
+    text-indent: 20px;
+}
+
+.add-button {
+    height: 76px;
+    width: 166px;
+    border-radius: 10px;
+    background-color: #100CEB;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* display tasks section */
+.task-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-indent: 20px;
+    width: 830px;
+    background-color: #BFFAF3;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.task-display {
+    color: red;
+}
+
+.task-modify {
+    display: flex;
+}
+
+.encourage-message {
+    font-style: italic;
+    color: beige;
+    opacity: 50%;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.edit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 17px 18px 18px 17px;
+    /* flex-shrink: 0px; */
+    border-radius: 10px;
+    background-color: #0395FF;
+}
+
+.delete-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 17px 18px 18px 17px;
+    /* flex-shrink: 0px; */
+    border-radius: 10px;
+    background-color: #D41B1B;
+    ;
+}
