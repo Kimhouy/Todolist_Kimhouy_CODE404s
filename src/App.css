@@ -105,30 +105,17 @@ body {
     padding-bottom: 10px;
 }
 
-.edit-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.task-button {
     width: 60px;
     height: 60px;
-    padding: 17px 18px 18px 17px;
-    /* flex-shrink: 0px; */
     border-radius: 10px;
     background-color: #0395FF;
     opacity: 80%;
 }
 
-.delete-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    padding: 17px 18px 18px 17px;
-    /* flex-shrink: 0px; */
-    border-radius: 10px;
-    background-color: #D41B1B;
-    opacity: 80%;
+.delete-button{
+    background-color: #29432b;
+    color: #1db87a;
 }
 
 
