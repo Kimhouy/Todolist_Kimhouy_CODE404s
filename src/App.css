@@ -31,9 +31,13 @@ body {
     width: 830px;
     border-radius: 10px;
     padding: 30px;
-    padding-top: 30px;
-    margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.add-task-container {
+    margin-bottom: 0;
+    
+    
 }
 
 .add-taskbar {
@@ -73,7 +77,6 @@ body {
     background-color: #FFE8D6;
     border: 2px solid #CB997E;
     border-radius: 10px;
-
 }
 
 .task-content {
@@ -88,13 +91,6 @@ body {
 
 .task-modify {
     display: flex;
-
-}
-
-.encourage-message {
-    font-style: italic;
-    color: beige;
-    opacity: 50%;
 }
 
 .task-actions {
@@ -117,4 +113,31 @@ body {
 .delete-button {
     background-color: #980722;
     color: white;
+}
+
+/* Modify section */
+.task-modify {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.edit-status {
+    position: absolute;
+    left: 95%;
+}
+
+.input {
+    height: 70px;
+    width: 650px;
+    border: none;
+    background: white;
+    border-radius: 10px;
+    text-indent: 10px;
+    font-size: 24px;
+    font-family: 'Gluten', sans-serif;
+}
+
+.input:focus {
+    outline: none;
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { FaTimes } from "react-icons/fa"
 
-function ModifyTask({ task, onSubmit }) {
+function ModifyTask({ task, onSubmit, edit }) {
     const [action, setAction] = useState(task.action);
 
     const handleChange = (event) => {
@@ -13,14 +14,19 @@ function ModifyTask({ task, onSubmit }) {
         onSubmit(task.id, action);
     };
 
+    const editStatus = () => {
+        edit()
+    }
+
     return (
         <form onSubmit={handleSubmit} className="task-modify" >
-            <label className="encourage-message">Let's note down your tasks!!!</label>
             <input className="input" value={action} onChange={handleChange} />
-            <button className="modify-button">
-            </button>
+            <FaTimes color="red" onClick={() => editStatus()} className="edit-status" />
         </form>
     );
 }
+
+
+
 
 export default ModifyTask;

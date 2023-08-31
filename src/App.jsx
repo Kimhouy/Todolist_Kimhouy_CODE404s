@@ -7,6 +7,17 @@ import './App.css';
 function App() {
   const [tasks, setTasks] = useState([]);
 
+  const editTaskById = (id, newAction) => {
+    const updatedTasks = tasks.map((task) => {
+      if (task.id === id) {
+        return { ...task, action: newAction };
+      }
+      return task;
+    });
+
+    setTasks(updatedTasks);
+  };
+
   const deleteTaskById = (id) => {
     const updatedTasks = tasks.filter((task) => {
       return task.id !== id;
@@ -23,6 +34,7 @@ function App() {
         action,
       },
     ];
+
     setTasks(updatedTasks);
   };
 
@@ -31,7 +43,7 @@ function App() {
     <>
       <div className='task-contain-all'>
         <AddTask onCreate={taskAdded} />
-        <DisplayTask tasks={tasks} onDelete={deleteTaskById} />
+        <DisplayTask tasks={tasks} onEdit={editTaskById} onDelete={deleteTaskById} />
       </div>
     </>
   );

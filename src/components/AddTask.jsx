@@ -18,12 +18,11 @@ function AddTask({ onCreate }) {
 
     return (
         <>
-           
             <div className="header">Todo List</div>
-           
+
             <div className="container">
                 <div className="task-container">
-                    <form className="add-taskbar" onSubmit={handleSubmit}>
+                    <form className="add-taskbar" onSubmit={handleSubmit} >
                         <input className="add-task" value={activity} onChange={handleChange} />
                         <button className="add-button">Add</button>
                     </form>
