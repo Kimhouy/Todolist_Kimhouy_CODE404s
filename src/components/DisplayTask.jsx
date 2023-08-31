@@ -1,9 +1,9 @@
 import ShowTask from "./ShowTask";
 
-function DisplayTask({ tasks }) {
+function DisplayTask({ tasks, onDelete }) {
     const renderedTasks = tasks.map((task) => {
         return (
-            <ShowTask key={task.id} task={task} />
+            <ShowTask onDelete={onDelete} key={task.id} task={task} />
         );
     });
 

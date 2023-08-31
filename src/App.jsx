@@ -7,6 +7,14 @@ import './App.css';
 function App() {
   const [tasks, setTasks] = useState([]);
 
+  const deleteTaskById = (id) => {
+    const updatedTasks = tasks.filter((task) => {
+      return task.id !== id;
+    });
+
+    setTasks(updatedTasks);
+  };
+
   const taskAdded = (action) => {
     const updatedTasks = [
       ...tasks,
@@ -23,7 +31,7 @@ function App() {
     <>
       <div className='task-contain-all'>
         <AddTask onCreate={taskAdded} />
-        <DisplayTask tasks={tasks} />
+        <DisplayTask tasks={tasks} onDelete={deleteTaskById} />
       </div>
     </>
   );
