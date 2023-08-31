@@ -109,13 +109,14 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 10px;
-    background-color: #0395FF;
+    background-color: #16abd1;
     opacity: 80%;
+    color: white;
 }
 
 .delete-button{
-    background-color: #29432b;
-    color: #1db87a;
+    background-color: #980722;
+    color: white;
 }
 
 
