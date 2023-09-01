@@ -1,6 +1,9 @@
 # TodoList Project 
 * This project is initiated to encourage better understanding of the project application, project structure, and its library usage.  
 * This TodoList app is designed for simple and practical note taking, easy preparation, reminding, and managing for the tasks of the day.
+
+# [App Demo](https://todolist-theta-puce.vercel.app/)
+
 ## 1. Project Overview
 The app is implemented based on Vitejs and React framework, style with CSS and other design/building tools such as:
 * Figma 
@@ -61,6 +64,7 @@ Please, refer to [React Flow](https://app.diagrams.net/#G1-rkWxa7A2HwNDS-M-sUHxn
 ## 8. Backlog
 - When modifying the text overlfow, the rest of the text outside the content box won't be shown. It is practical for a brief description of the task only.
 - When the task is checked as done, the number of tasks status still remains the same unless it was deleted. 
+
 
 
 
