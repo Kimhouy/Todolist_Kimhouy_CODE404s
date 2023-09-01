@@ -46,7 +46,7 @@ function App() {
         <DisplayTask tasks={tasks} onEdit={editTaskById} onDelete={deleteTaskById} />
 
         <div>
-                <p className="task-text"> You have {tasks.length} tasks. </p>
+                  <p className="task-text">{tasks.length <= 1?`${tasks.length} task to go. Figthing!`:`${tasks.length} tasks are waiting you, Fighting!`} </p>
           </div>
       </div>
       
