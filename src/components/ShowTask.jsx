@@ -8,6 +8,7 @@ function ShowTask({ task, onDelete, onEdit }) {
     const [showEdit, setShowEdit] = useState(false);
     const [status, setStatus] = useState(false);
 
+
     const handleEditClick = () => {
         setShowEdit(!showEdit);
     };
@@ -19,6 +20,7 @@ function ShowTask({ task, onDelete, onEdit }) {
     const handleSubmit = (id, newAction) => {
         setShowEdit(false);
         onEdit(id, newAction)
+        editStatusx(true)
     };
 
     const handleDeleteClick = () => {
@@ -40,12 +42,12 @@ function ShowTask({ task, onDelete, onEdit }) {
         <div className="task-container">
             <div className="task-bar">
                 <input type="checkbox" className="task-checkbox" checked={status} onChange={handleStatus} />
-                <p className= {`${status ? "task-content task-completed":"task-content"} `}>{content} </p>
-
+                <p className={`${status ? "task-content task-completed" : "task-content"} `}>{content} </p>
                 <div className="task-actions">
-                    <button className="task-button" onClick={handleEditClick} >
+                    {!showEdit && <button className="task-button" onClick={handleEditClick} >
                         <BiSolidEditAlt size={30} />
-                    </button>
+                    </button>}
+
                     <button className="task-button delete-button" onClick={handleDeleteClick} >
                         <AiTwotoneDelete size={30} />
                     </button>
