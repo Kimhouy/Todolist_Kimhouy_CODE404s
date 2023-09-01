@@ -6,6 +6,7 @@ import { AiTwotoneDelete } from 'react-icons/ai';
 
 function ShowTask({ task, onDelete, onEdit }) {
     const [showEdit, setShowEdit] = useState(false);
+    const [status, setStatus] = useState(false);
 
     const handleEditClick = () => {
         setShowEdit(!showEdit);
@@ -24,6 +25,10 @@ function ShowTask({ task, onDelete, onEdit }) {
         onDelete(task.id)
     };
 
+    const handleStatus = () => {
+        setStatus(!status);
+    };
+
     let content = <p>{task.action}</p>;
     if (showEdit) {
         content = <ModifyTask onSubmit={handleSubmit} task={task} edit={editStatus} />;
@@ -34,7 +39,9 @@ function ShowTask({ task, onDelete, onEdit }) {
 
         <div className="task-container">
             <div className="task-bar">
-                <div className="task-content">{content} </div>
+                <input type="checkbox" className="task-checkbox" checked={status} onChange={handleStatus} />
+                <p className= {`${status ? "task-content task-completed":"task-content"} `}>{content} </p>
+
                 <div className="task-actions">
                     <button className="task-button" onClick={handleEditClick} >
                         <BiSolidEditAlt size={30} />
@@ -45,7 +52,7 @@ function ShowTask({ task, onDelete, onEdit }) {
                 </div>
             </div>
         </div>
-    
+
     );
 }
 
