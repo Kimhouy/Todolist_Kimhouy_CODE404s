@@ -31,19 +31,21 @@ function ShowTask({ task, onDelete, onEdit }) {
 
 
     return (
-    <div className="task-container">
-        <div className="task-bar">
-            <div className="task-content">{content}</div>
-            <div className="task-actions">
-                <button className="task-button" onClick={handleEditClick} >
-                    <BiSolidEditAlt size={30} />
-                </button>
-                <button className="task-button delete-button" onClick={handleDeleteClick} >
-                    <AiTwotoneDelete size={30} />
-                </button>
+
+        <div className="task-container">
+            <div className="task-bar">
+                <div className="task-content">{content} </div>
+                <div className="task-actions">
+                    <button className="task-button" onClick={handleEditClick} >
+                        <BiSolidEditAlt size={30} />
+                    </button>
+                    <button className="task-button delete-button" onClick={handleDeleteClick} >
+                        <AiTwotoneDelete size={30} />
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
+    
     );
 }
 

@@ -4,6 +4,8 @@
 body {
     background-color: #FF9F1C;
     font-family: 'Gluten', sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
 .header {
@@ -12,6 +14,19 @@ body {
     font-size: 64px;
     font-weight: 700;
     margin-top: 50px;
+    
+}
+
+.flower-icon-1 {
+    color: #fffafa;
+}
+
+.flower-icon-2 {
+    color: #f8f9f5;
+}
+
+.flower-icon-3 {
+    color: #fff5ee;
 }
 
 .task-contain-all {
@@ -19,6 +34,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 900px;
 }
 
 .container {
@@ -26,18 +42,19 @@ body {
 }
 
 .task-container {
-    background-color: white;
+    height: auto;
+    width: 890px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.add-task-container {
+    background-color: #FFE8D6;
     height: auto;
     width: 830px;
     border-radius: 10px;
     padding: 30px;
     margin-bottom: 30px;
-}
-
-.add-task-container {
-    margin-bottom: 0;
-    
-    
 }
 
 .add-taskbar {
@@ -46,7 +63,6 @@ body {
 }
 
 .add-task {
-
     height: 75px;
     width: 600px;
     border-radius: 10px;
@@ -55,6 +71,10 @@ body {
     text-indent: 20px;
     outline: none;
     font-family: 'Gluten', sans-serif;
+}
+
+.add-task::placeholder {
+    opacity: 60%;
 }
 
 .add-button {
@@ -73,8 +93,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 830px;
-    background-color: #FFE8D6;
+    width: 890px;
+    background-color: white;
     border: 2px solid #CB997E;
     border-radius: 10px;
 }
@@ -82,11 +102,6 @@ body {
 .task-content {
     margin-left: 20px;
     font-size: 24px;
-}
-
-.task-display {
-    margin-top: 100px;
-    overflow: hidden;
 }
 
 .task-modify {
@@ -140,4 +155,10 @@ body {
 
 .input:focus {
     outline: none;
+}
+
+.task-text{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
 }

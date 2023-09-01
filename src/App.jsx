@@ -44,7 +44,12 @@ function App() {
       <div className='task-contain-all'>
         <AddTask onCreate={taskAdded} />
         <DisplayTask tasks={tasks} onEdit={editTaskById} onDelete={deleteTaskById} />
+
+        <div>
+                <p className="task-text"> You have {tasks.length} tasks. </p>
+          </div>
       </div>
+      
     </>
   );
 }
