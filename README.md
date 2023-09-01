@@ -27,39 +27,14 @@ Please, refer to [Convention Guide](https://docs.google.com/document/d/1NtNEuOJX
 ## 4. Figma UX/UI 
 Please, refer to [UX/UI Design](https://www.figma.com/file/wF7CGY2asICwHsox5cCVqJ/TodoList-Drafting?type=design&mode=design&t=DVaVQtGlDyJocZMC-0) for more detail.
 ## 5. App Flow
-Please, refer to [App Flow](https://app.diagrams.net/#G1-rkWxa7A2HwNDS-M-sUHxnHJK-CPXNLg)
+Please, refer to [App Flow](https://app.diagrams.net/#G1-rkWxa7A2HwNDS-M-sUHxnHJK-CPXNLg) for more detail.
 
 ## 6. React Flow 
-Please, refer to [React Flow](https://app.diagrams.net/#G1-rkWxa7A2HwNDS-M-sUHxnHJK-CPXNLg)
+Please, refer to [React Flow](https://app.diagrams.net/#G1iAPcFE9ClSAcAKNVa4JBPOQmGDegUP8U) for more detail.
 ## 7. Git Flow Method
-### 1. Main Branch
-  * store the stable version of app
-### 2. Develop Branch
-  * This branch is use as the app developing integreation
-  * Any feature that created are merged into develop branch
-  * Represents the latest state of the application with features being developed.
+Please refer to [Git Flow Method](https://docs.google.com/document/d/1pXsvDflXpaz7naLe6q1B6rwuBCWStgou1aElVwOpyaY/edit) for more detail.
 
-### 3. Feature Branches 
-  * Feature branch responsible for the app features 
-  * Feature branches
-    * feature/add
-    * feature/delete
-    * feature/modify
-    * feature/update_status 
 
-### 4. Release Branches
- * For release a new version of TodoList
-    * Create a release branch from the develop
-    * Release branched :
-      * release/1.0 
-
-### 5. Bugfix Branches 
-* If any bugs appear when demo the app after release 
-
-### 6. Hoxfix Branches
-* used to quickly patch production releases. Hotfix branches are a lot like release branches and feature branches except they're based on main instead of develop.
-
-[Git Flow Reference: ](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow#:~:text=What%20is%20Gitflow%3F,lived%20branches%20and%20larger%20commits)
 
 ## 8. Backlog
 - When modifying the text overlfow, the rest of the text outside the content box won't be shown. It is practical for a brief description of the task only.
