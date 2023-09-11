@@ -40,8 +40,8 @@ Please refer to [Git Flow Method](https://docs.google.com/document/d/1pXsvDflXpa
 - When modifying the text overlfow, the rest of the text outside the content box won't be shown. It is practical for a brief description of the task only.
 - When the task is checked as done, the number of tasks status still remains the same unless it was deleted. 
 
-##P.S. :
-- Most part of this project, I did it follow through the "Modern React with Redux [2023 Update]" course in Udemy; in section 6, to be specific.
+## P.S. :
+- Most part of this project, I did it mainly follow through the "Modern React with Redux [2023 Update]" course of Udemy; in section 6, to be specific.
 - For some additional parts like counting the tasks and hiding the editing button when editing the task, I ask my friends for their guidances.  
 
 
